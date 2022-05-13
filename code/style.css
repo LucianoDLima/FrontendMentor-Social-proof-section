@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Screen reader only, for accessibility when needed */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 15px;
+  font-family: "League Spartan";
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-size: auto, 110vh;
+  }
+}
+
+main {
+  padding-block: 8.3rem;
+  max-width: 50rem;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    padding-block: 11.8rem 0;
+    max-width: 114rem;
+  }
+}
+
+#intro-area {
+  margin-bottom: 4.9rem;
+  padding-inline: 2.4rem;
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3.2rem;
+  }
+}
+
+#intro-area .intro-area__main-text {
+  text-align: center;
+  margin-bottom: 4.05rem;
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__main-text {
+    max-width: 45rem;
+    text-align: unset;
+  }
+}
+
+#intro-area .intro-area__main-text h2 {
+  color: #502050;
+  font-size: 2.675em;
+  letter-spacing: -1.45px;
+  line-height: .8;
+  margin-bottom: 2.25rem;
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__main-text h2 {
+    font-size: 3.67em;
+    letter-spacing: -1.6px;
+    line-height: .86;
+    margin-bottom: 2.8rem;
+  }
+}
+
+#intro-area .intro-area__main-text p {
+  color: #937b92;
+  font-size: 1.17em;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+#intro-area .intro-area__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.64rem;
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__rating {
+    gap: 1.68rem;
+    position: relative;
+    bottom: 1.5rem;
+  }
+}
+
+#intro-area .intro-area__rating li {
+  padding-block: 2.375rem;
+  background-color: #f7f2f7;
+  border-radius: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__rating li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #f7f2f7;
+    padding-block: unset;
+    min-height: 5.5rem;
+    min-width: 44.55rem;
+    gap: 8.5rem;
+  }
+}
+
+#intro-area .intro-area__rating .intro-area__rating-stars {
+  position: relative;
+  bottom: .8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .8rem;
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__rating .intro-area__rating-stars {
+    position: static;
+  }
+}
+
+#intro-area .intro-area__rating p {
+  font-weight: 700;
+  color: #502050;
+  font-size: 1.05em;
+  position: relative;
+  top: .8rem;
+  text-align: center;
+  word-spacing: .2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__rating p {
+    position: static;
+    word-spacing: .2rem;
+    letter-spacing: -.07px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__rating li:nth-child(1) {
+    position: inherit;
+    right: 7.8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__rating li:nth-child(1) p {
+    -webkit-transform: translateX(-5.18rem);
+            transform: translateX(-5.18rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__rating li:nth-child(2) {
+    position: inherit;
+    right: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__rating li:nth-child(2) .intro-area__rating-stars {
+    -webkit-transform: translateX(1.3rem);
+            transform: translateX(1.3rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__rating li:nth-child(2) p {
+    -webkit-transform: translateX(-3.85rem);
+            transform: translateX(-3.85rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__rating li:nth-child(3) {
+    position: inherit;
+    left: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #intro-area .intro-area__rating li:nth-child(3) p {
+    -webkit-transform: translateX(-5.15rem);
+            transform: translateX(-5.15rem);
+  }
+}
+
+#review-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+  padding-inline: 2.4rem;
+  max-width: 50rem;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  #review-area {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    gap: 3rem;
+    max-width: unset;
+  }
+}
+
+#review-area .review-area__card {
+  min-height: 24.8rem;
+  border-radius: .8rem;
+  background-color: #502050;
+  padding: 4rem 3.2rem 3rem;
+}
+
+@media screen and (min-width: 1000px) {
+  #review-area .review-area__card {
+    min-width: 35rem;
+    min-height: 23.4rem;
+    border-radius: 1rem;
+  }
+}
+
+#review-area .review-area__card .review-area__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.7rem;
+}
+
+#review-area .review-area__card .review-area__user .review-area__user-picture img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 2.25rem;
+}
+
+#review-area .review-area__card .review-area__user .review-area__user-box {
+  letter-spacing: .04rem;
+  font-size: 1.1em;
+}
+
+#review-area .review-area__card .review-area__user .review-area__user-box p:first-child {
+  color: white;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+#review-area .review-area__card .review-area__user .review-area__user-box p:last-child {
+  color: #ee68a4;
+}
+
+#review-area .review-area__card .review-area__review p {
+  color: white;
+  line-height: 1.35;
+  font-size: 1.07em;
+  font-family: "League Spartan";
+  word-spacing: .1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  #review-area .review-area__card:nth-child(2) {
+    position: relative;
+    top: 1.52rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #review-area .review-area__card:nth-child(3) {
+    position: relative;
+    top: 3.2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
