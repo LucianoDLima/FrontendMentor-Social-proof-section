@@ -10,4 +10,5 @@ Thanks for checking out this front-end coding challenge.
 
 
 [Live Site](https://lucianodlima.github.io/FrontendMentor-Social-proof-section/)
+
 [Solution](https://www.frontendmentor.io/solutions/social-proof-section-scss-mobile-first-HJ4dQknUc)
